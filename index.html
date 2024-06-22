@@ -11,6 +11,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome kit -->
     <script src="https://kit.fontawesome.com/a04bede896.js" crossorigin="anonymous"></script>
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="/images/youtube.svg" type="image/x-icon">
 </head>
 
 <body class="container mx-auto">
@@ -26,12 +28,23 @@
                 <!-- navigation button -->
                 <div>
                     <ul class="flex gap-10">
-                        <a target="_blank" href="https://www.youtube.com">
-                            <li class="btn btn-ghost text-xl">Home</li>
-                        </a>
-                        <a target="_blank" href="https://www.youtube.com/feed/history">
-                            <li class="btn btn-ghost text-xl">History</li>
-                        </a>
+
+                        <li class="btn btn-ghost text-xl"><a target="_blank" href="https://www.youtube.com">Home</a>
+                        </li>
+                        <li class="btn btn-ghost text-xl"><a target="_blank"
+                                href="https://www.youtube.com/feed/history">History</a></li>
+                        <li>
+                            <details class="dropdown">
+                                <summary class="m-1 btn btn-ghost text-xl">More</summary>
+                                <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                                    <li><a href="https://www.youtube.com/feed/playlists" target="_blank">Playlist</a>
+                                    </li>
+                                    <li><a href="https://www.youtube.com/playlist?list=WL" target="_blank">Watch
+                                            Later</a></li>
+                                </ul>
+                            </details>
+                        </li>
+
                     </ul>
                 </div>
                 <!-- search box -->
