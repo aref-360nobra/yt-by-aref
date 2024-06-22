@@ -13,9 +13,42 @@
     <script src="https://kit.fontawesome.com/a04bede896.js" crossorigin="anonymous"></script>
     <!-- favicon link -->
     <link rel="shortcut icon" href="/images/youtube.svg" type="image/x-icon">
+    <script src="script.js"></script>
+    <!-- vanila css -->
+    <style>
+        /* styles.css */
+
+        /* Hide the small screen alert by default */
+        #small-screen-alert {
+            display: none;
+            text-align: center;
+            font-size: 24px;
+            color: red;
+            padding: 20px;
+        }
+
+        /* Show the main content by default */
+        #main-content {
+            display: block;
+        }
+
+        /* Media query for small screens (less than 768px) */
+        @media (max-width: 767px) {
+            #small-screen-alert {
+                display: block;
+            }
+
+            #main-content {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body class="container mx-auto">
+    <div id="small-screen-alert">
+        This website is not supported on small screens.
+    </div>
     <header>
         <nav>
             <div class="navbar bg-base-100 flex justify-evenly">
