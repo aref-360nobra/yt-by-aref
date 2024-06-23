@@ -14,42 +14,34 @@
     <!-- favicon link -->
     <link rel="shortcut icon" href="/images/youtube.svg" type="image/x-icon">
     <script src="script.js"></script>
-    <!-- vanila css -->
-    <style>
-        /* styles.css */
-
-        /* Hide the small screen alert by default */
-        #small-screen-alert {
-            display: none;
-            text-align: center;
-            font-size: 24px;
-            color: red;
-            padding: 20px;
-        }
-
-        /* Show the main content by default */
-        #main-content {
-            display: block;
-        }
-
-        /* Media query for small screens (less than 768px) */
-        @media (max-width: 767px) {
-            #small-screen-alert {
-                display: block;
-            }
-
-            #main-content {
-                display: none;
-            }
-        }
-    </style>
 </head>
 
 <body class="container mx-auto">
-    <div id="small-screen-alert">
-        This website is not supported on small screens.
-    </div>
     <header>
+        <!-- navigation drawer -->
+        <div class="">
+            <div class="drawer">
+                <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                    <!-- Page content here -->
+                    <label for="my-drawer" class="btn drawer-button absolute top-4"><i class="fa-solid fa-bars"
+                            style="color: #22eeaa;"></i></label>
+                </div>
+                <div class="drawer-side">
+                    <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                    <ul class="menu p-4 w-80 min-h-full pt-20 bg-base-200 text-base-content">
+                        <!-- Sidebar content here -->
+                        <li><a target="_blank" href="https://decoder.aparsclassroom.com/">decoder</a></li>
+                        <li><a target="_blank" href="https://b2m25.aparsclassroom.com/">b2m25</a></li>
+                        <li><a target="_blank" href="https://math25.aparsclassroom.com/">Rhombus</a></li>
+                        <li><a target="_blank" href="https://bh25.aparsclassroom.com/">Breaking Biology </a></li>
+                        <li><a href="https://web.programming-hero.com/dashboard">Programming Hero</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
         <nav>
             <div class="navbar bg-base-100 flex justify-evenly">
                 <!-- youtube icon custom -->
